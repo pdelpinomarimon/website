@@ -7,7 +7,7 @@ View example: https://cplmakerlab.github.io/simple-website-template/
 - Fork this repository to copy it to your account, i.e. github.com/username/simple-website-template (you can rename it as well)
 - Make sure you see the gh-pages branch (it should be the default)
 - Edit website files on the gh-pages branch, then wait a minute or two for Github Pages to update and deploy your site.
-- View your site: https://username.github.io/simple-website-template
+- View your site: https://pdelpinomarimon.github.io/simple-website-template/
 
 ## How does this work?
 This website template uses CSS & JS to hide and show different parts of index.html and uses Github Pages to render the website from the gh-pages branch.
