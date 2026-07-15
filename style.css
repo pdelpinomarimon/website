@@ -317,7 +317,23 @@ ul.main-menu li a.active {
   margin-bottom: 0.8rem;
 }
 
+.engagement-list {
+    margin-top: 1.5rem;
+    padding-left: 2.2rem;
+}
 
+.engagement-list li {
+    margin-bottom: 1.2rem;
+}
+
+.engagement-list a {
+    margin-left: 0.4rem;
+}
+  .research-intro {
+    margin-bottom: 3.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
 /*
  * Footer
  */
@@ -378,11 +394,7 @@ footer p {
     flex-direction: column;
   }
 
-  .research-intro {
-    margin-bottom: 3.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-}
+
   .profile-photo {
     width: 12rem;
     height: 12rem;
