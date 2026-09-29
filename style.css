@@ -18,17 +18,17 @@ body {
   margin: 3rem auto;
   padding: 0 2rem;
 
-  font-size: 1.7em;
-  line-height: 1.7;
-  font-weight: 400;
-
   font-family:
     "Helvetica Neue",
     Helvetica,
     Arial,
     sans-serif;
 
-  color: #f4f5f2;
+  font-size: 1.7em;
+  line-height: 1.65;
+  font-weight: 400;
+
+  color: #e6e9e6;
 }
 
 
@@ -39,8 +39,8 @@ body {
 header,
 main,
 footer {
-  background: rgba(12, 22, 19, 0.91);
-  color: #f4f5f2;
+  background: rgba(12, 22, 19, 0.93);
+  color: #e6e9e6;
 }
 
 header {
@@ -55,7 +55,7 @@ main {
 
 footer {
   padding: 2rem 4rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-top: 1px solid rgba(255, 255, 255, 0.10);
   border-radius: 0 0 0.8rem 0.8rem;
 }
 
@@ -76,23 +76,23 @@ footer {
   height: 15rem;
   object-fit: cover;
   border-radius: 0.6rem;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .profile-title h1 {
-  margin: 0 0 0.8rem;
+  margin: 0 0 0.7rem;
 }
 
 .position {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 600;
-  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #dfe4e0;
 }
 
 .affiliation {
   margin: 0.4rem 0 0;
-  color: #d4ddd7;
+  color: #aeb8b2;
   line-height: 1.5;
 }
 
@@ -108,35 +108,46 @@ h4,
 h5,
 h6 {
   margin-top: 0;
-  color: #ffffff;
+  color: #eef0ee;
   text-rendering: optimizeLegibility;
 }
 
 h1 {
-  font-size: 4rem;
-  line-height: 1.15;
-  font-weight: 500;
-  letter-spacing: -0.08rem;
+  font-size: 3.2rem;
+  line-height: 1.2;
+  font-weight: 400;
+  letter-spacing: -0.03rem;
 }
 
 h2 {
-  margin-bottom: 2.5rem;
-  font-size: 3.2rem;
-  line-height: 1.25;
-  font-weight: 500;
+  margin-bottom: 2.8rem;
+  font-size: 2.4rem;
+  line-height: 1.3;
+  font-weight: 400;
 }
 
 h3 {
-  margin-bottom: 1rem;
-  font-size: 2.1rem;
+  margin-bottom: 0.8rem;
+  font-size: 1.85rem;
   line-height: 1.4;
-  font-weight: 600;
+  font-weight: 500;
 }
+
+
+/*
+ * Section labels
+ */
 
 .section-subtitle {
   margin-top: 3.5rem;
-  padding-bottom: 0.7rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1.8rem;
+  padding-bottom: 0;
+
+  border-bottom: 0;
+
+  color: #aeb8b2;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 
@@ -145,17 +156,17 @@ h3 {
  */
 
 p {
-  max-width: 78rem;
-  margin: 0 0 1.7rem;
+  max-width: 74rem;
+  margin: 0 0 1.6rem;
 }
 
 .intro {
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1.7rem;
+  line-height: 1.65;
 }
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 
@@ -164,18 +175,20 @@ strong {
  */
 
 a {
-  color: #ff895f;
-  font-weight: 500;
+  color: #b7cbbd;
+  font-weight: 400;
   text-decoration: none;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
 }
 
 a:hover {
-  color: #ffb094;
+  color: #d4dfd7;
   text-decoration: underline;
 }
 
 a:focus {
-  outline: 2px solid #ff895f;
+  outline: 1px solid #b7cbbd;
   outline-offset: 0.3rem;
 }
 
@@ -187,7 +200,7 @@ a:focus {
 ul.main-menu {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem 2.2rem;
+  gap: 0.7rem 2rem;
 
   margin: 0;
   padding: 0;
@@ -199,21 +212,21 @@ ul.main-menu li a {
   display: inline-block;
   padding: 0.3rem 0;
 
-  border-bottom: 3px solid transparent;
+  border-bottom: 1px solid transparent;
 
-  color: #d6ddd9;
-  font-size: 1.9rem;
-  font-weight: 500;
+  color: #aeb8b2;
+  font-size: 1.65rem;
+  font-weight: 400;
 }
 
 ul.main-menu li a:hover {
-  color: #ffffff;
+  color: #e6e9e6;
   text-decoration: none;
 }
 
 ul.main-menu li a.active {
-  color: #ffffff;
-  border-bottom-color: #ff7043;
+  color: #e6e9e6;
+  border-bottom-color: #899c90;
 }
 
 
@@ -224,48 +237,50 @@ ul.main-menu li a.active {
 .button-group {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
-  margin-top: 2.8rem;
+  gap: 1rem;
+  margin-top: 2.5rem;
 }
 
 .button {
   display: inline-block;
-  padding: 1rem 1.6rem;
+  padding: 0.8rem 1.4rem;
 
-  border: 1px solid #ff7043;
-  border-radius: 0.4rem;
+  border: 1px solid #899c90;
+  border-radius: 0.3rem;
 
-  background: #ff7043;
-  color: #111a16;
+  background: transparent;
+  color: #dce4de;
 
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .button:hover {
-  background: #ff8a65;
-  color: #111a16;
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
   text-decoration: none;
 }
 
 .button.secondary {
   background: transparent;
-  color: #ff9874;
+  color: #b7c1bb;
+  border-color: #66756c;
 }
 
 .button.secondary:hover {
-  background: rgba(255, 112, 67, 0.12);
-  color: #ffb094;
+  background: rgba(255, 255, 255, 0.04);
+  color: #dce4de;
 }
 
 
 /*
- * Research and teaching entries
+ * Research, teaching, and presentation entries
  */
 
 .entry {
-  margin-bottom: 3.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  margin-bottom: 3rem;
+  padding-bottom: 2.4rem;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.09);
 }
 
 .entry:last-child {
@@ -275,14 +290,31 @@ ul.main-menu li a.active {
 .entry-date {
   margin-bottom: 0.5rem;
 
-  color: #ff9874;
-  font-size: 1.6rem;
-  font-weight: 700;
+  color: #919c96;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
 
 .entry-details {
-  color: #ccd5d0;
+  color: #aeb8b2;
   font-size: 1.55rem;
+  font-weight: 400;
+}
+
+.translation {
+  color: #aeb8b2;
+  font-size: 1.55rem;
+}
+
+
+/*
+ * Research introductions
+ */
+
+.research-introduction,
+.research-intro,
+.teaching-introduction {
+  margin-bottom: 3.2rem;
 }
 
 
@@ -291,7 +323,7 @@ ul.main-menu li a.active {
  */
 
 .publication {
-  margin-bottom: 2.8rem;
+  margin-bottom: 2.6rem;
 }
 
 .publication p {
@@ -308,7 +340,8 @@ ul.main-menu li a.active {
  */
 
 .course-list,
-.contact-links {
+.contact-links,
+.engagement-list {
   padding-left: 2.2rem;
 }
 
@@ -318,29 +351,25 @@ ul.main-menu li a.active {
 }
 
 .engagement-list {
-    margin-top: 1.5rem;
-    padding-left: 2.2rem;
+  margin-top: 1.5rem;
 }
 
 .engagement-list li {
-    margin-bottom: 1.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .engagement-list a {
-    margin-left: 0.4rem;
+  margin-left: 0.4rem;
 }
-  .research-intro {
-    margin-bottom: 3.5rem;
-    padding-bottom: 2.5rem;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
-}
+
+
 /*
  * Footer
  */
 
 footer p {
   margin: 0.4rem 0;
-  color: #c5cec9;
+  color: #929d97;
   font-size: 1.4rem;
 }
 
@@ -394,26 +423,29 @@ footer p {
     flex-direction: column;
   }
 
-
   .profile-photo {
     width: 12rem;
     height: 12rem;
   }
 
   h1 {
-    font-size: 3.2rem;
-  }
-
-  h2 {
     font-size: 2.8rem;
   }
 
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+  }
+
   ul.main-menu {
-    gap: 0.6rem 1.5rem;
+    gap: 0.6rem 1.4rem;
   }
 
   ul.main-menu li a {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
 }
