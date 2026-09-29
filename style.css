@@ -192,7 +192,21 @@ a:focus {
   outline-offset: 0.3rem;
 }
 
+/* Linked titles */
 
+h3 a {
+  color: #e6e9e6;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: #899c90;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.22em;
+}
+
+h3 a:hover {
+  color: #ffffff;
+  text-decoration-color: #b7cbbd;
+}
 /*
  * Navigation
  */
